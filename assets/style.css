@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #004466;
+  color: white;
+  padding: 1rem;
+}
+nav a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.tagline {
+  font-style: italic;
+}
+main {
+  padding: 1rem;
+}
+article {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f4f4f4;
+  margin-top: 2rem;
+}
+a {
+  color: #004466;
+}
