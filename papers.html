@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Paper Vault – DecodeDx</title>
   <link rel="stylesheet" href="assets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header>
@@ -14,13 +15,154 @@
       <a href="about.html">About</a>
     </nav>
   </header>
+
   <main>
+    <input type="text" id="searchBox" placeholder="Search papers..." onkeyup="filterPapers()" style="width:100%;padding:8px;margin-bottom:1rem;">
+
+    <h2>🧪 Ultrasound-Based Models</h2>
+    <!-- 1 -->
     <article>
-      <h2>📄 Example Paper Title</h2>
-      <p><strong>Summary:</strong> Brief summary of key methods and findings.</p>
-      <p><a href="https://arxiv.org/abs/xxxx.xxxx" target="_blank">Read the full paper</a>.</p>
+      <h3><a href="https://doi.org/10.1088/1742-6596/2949/1/012003" target="_blank">A Combined Segmentation and Classification Pipeline</a></h3>
+      <p><strong>Modality:</strong> Ultrasound</p>
+      <p><strong>Summary:</strong> Integrates Deep Residual UNET for segmentation and VGG16 for classification. Enhances diagnostic performance by combining segmented & original data.</p>
+      <p><strong>Results:</strong> Improved accuracy (unspecified)</p>
+    </article>
+    <!-- 2 -->
+    <article>
+      <h3><a href="https://doi.org/10.1007/s13534-024-00435-7" target="_blank">Segmentation-Guided Ensemble Classification Framework</a></h3>
+      <p><strong>Modality:</strong> Ultrasound</p>
+      <p><strong>Summary:</strong> Two-phase pipeline: Attention U-Net + ensemble (SVM, k-NN, ANN). Aims for robust classification.</p>
+      <p><strong>Results:</strong> Accuracy: 99.57%, F1‑score: 95%</p>
+    </article>
+    <!-- 6 -->
+    <article>
+      <h3><a href="https://doi.org/10.1109/ACCESS.2023.3322284" target="_blank">Review on DL Models for Breast Cancer Detection</a></h3>
+      <p><strong>Modality:</strong> Mammography & Ultrasound</p>
+      <p><strong>Summary:</strong> Comprehensive review; covers ResNet, DenseNet, U-Net, YOLO, Mask R‑CNN.</p>
+      <p><strong>Results:</strong> Benchmark accuracy: 98.1%</p>
+    </article>
+    <!-- 7 -->
+    <article>
+      <h3><a href="https://doi.org/10.1109/TMI.2025.3191157" target="_blank">U-Net with Cross‑Scale Attention (CSAM‑U‑Net)</a></h3>
+      <p><strong>Modality:</strong> Ultrasound</p>
+      <p><strong>Summary:</strong> Multi‑scale attention fusion improves lesion detection.</p>
+      <p><strong>Results:</strong> Dice: 0.941, IoU: 0.87</p>
+    </article>
+    <!-- 9 -->
+    <article>
+      <h3><a href="https://doi.org/10.1109/JBHI.2024.3330742" target="_blank">Lightweight Breast Cancer Detection on Mobile</a></h3>
+      <p><strong>Modality:</strong> Ultrasound (Mobile)</p>
+      <p><strong>Summary:</strong> Knowledge‑distilled model optimized for low-resource devices.</p>
+      <p><strong>Results:</strong> Accuracy: 95.5%, model size &lt; 2 MB</p>
+    </article>
+
+    <h2>🧬 Histopathology-Based Models</h2>
+    <!-- 12 -->
+    <article>
+      <h3><a href="https://doi.org/10.1007/s11517-024-02861-3" target="_blank">Multi‑task U‑Net for Segmentation + Classification</a></h3>
+      <p><strong>Modality:</strong> Histopathology</p>
+      <p><strong>Summary:</strong> Shared U‑Net encoder for both segmentation and malignancy classification.</p>
+      <p><strong>Results:</strong> Accuracy: 97.12%, Dice: 0.89</p>
+    </article>
+    <!-- 14 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.inffus.2024.102379" target="_blank">Deep Feature Fusion with Gated Attention</a></h3>
+      <p><strong>Modality:</strong> Histopathology</p>
+      <p><strong>Summary:</strong> Multi‑scale Inception features combined via attention gating.</p>
+      <p><strong>Results:</strong> Accuracy: 96.9%, Precision: 97.5%</p>
+    </article>
+    <!-- 20 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107226" target="_blank">BreastGAN: GAN‑based Data Augmentation</a></h3>
+      <p><strong>Modality:</strong> Histopathology</p>
+      <p><strong>Summary:</strong> GAN‑synthesized images to combat dataset imbalance.</p>
+      <p><strong>Results:</strong> +4.7% accuracy improvement</p>
+    </article>
+    <!-- 25 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.artmed.2024.102543" target="_blank">Dual‑Branch CNN for Histology Classification</a></h3>
+      <p><strong>Modality:</strong> Histopathology</p>
+      <p><strong>Summary:</strong> Combines global view + patch analysis.</p>
+      <p><strong>Results:</strong> Accuracy: 96.4%, AUC: 0.972</p>
+    </article>
+
+    <h2>🧠 MRI-Based or Multi‑Modal Models</h2>
+    <!-- 4 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.bspc.2024.106992" target="_blank">Hybrid Segmentation and 3D Imaging Framework</a></h3>
+      <p><strong>Modality:</strong> 3D Mammography (DBT)</p>
+      <p><strong>Summary:</strong> YOLOv7 + Dense SE‑Net + semi‑supervised CNNs for real‑time diagnosis.</p>
+      <p><strong>Results:</strong> Outperformed existing models</p>
+    </article>
+    <!-- 10 -->
+    <article>
+      <h3><a href="https://doi.org/10.1007/s10278-024-00738-4" target="_blank">Multi‑Modal DL for Histopathology and MRI</a></h3>
+      <p><strong>Modality:</strong> Histopathology + MRI</p>
+      <p><strong>Summary:</strong> Decision‑level fusion of image and histological features.</p>
+      <p><strong>Results:</strong> AUC: 0.98, F1: 0.94</p>
+    </article>
+    <!-- 16 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.jbi.2024.104267" target="_blank">Federated Learning for Breast Cancer MRI</a></h3>
+      <p><strong>Modality:</strong> MRI</p>
+      <p><strong>Summary:</strong> Decentralized training across hospitals for data privacy.</p>
+      <p><strong>Results:</strong> Accuracy: 92.6%, F1: 89%</p>
+    </article>
+    <!-- 23 -->
+    <article>
+      <h3><a href="https://doi.org/10.1109/TBME.2024.3315517" target="_blank">Temporal CNNs for Dynamic Breast MRI</a></h3>
+      <p><strong>Modality:</strong> Dynamic MRI</p>
+      <p><strong>Summary:</strong> 3D+t CNN captures contrast uptake to boost early diagnosis.</p>
+      <p><strong>Results:</strong> Sensitivity: 98%, Dice: 0.92</p>
+    </article>
+
+    <h2>🔍 Explainability, Augmentation & Tools</h2>
+    <!-- 5 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.ibmed.2025.100224" target="_blank">Hybrid Deep Learning and Active Contour Approach</a></h3>
+      <p><strong>Modality:</strong> Mammography</p>
+      <p><strong>Summary:</strong> U‑Net + Active Contour improves lesion boundary precision.</p>
+      <p><strong>Results:</strong> Accuracy: 97.34%, Dice: 0.813, IoU: 0.891</p>
+    </article>
+    <!-- 8 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107132" target="_blank">Vision Transformer with SAM for BC Detection</a></h3>
+      <p><strong>Modality:</strong> Mammography</p>
+      <p><strong>Summary:</strong> ViT + SAM + Grad‑CAM for explainable detection.</p>
+      <p><strong>Results:</strong> Accuracy: 96.21%, AUC: 0.981</p>
+    </article>
+    <!-- 11 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.media.2024.103576" target="_blank">Explainable AI for Breast Ultrasound</a></h3>
+      <p><strong>Modality:</strong> Ultrasound</p>
+      <p><strong>Summary:</strong> Uses Grad‑CAM & SHAP to visualize decision reasoning.</p>
+      <p><strong>Results:</strong> Accuracy: 94.8%, Dice: 0.87</p>
+    </article>
+    <!-- 13 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.eswa.2024.121234" target="_blank">Ensemble Deep Forest with Pretrained CNN</a></h3>
+      <p><strong>Modality:</strong> Mammography</p>
+      <p><strong>Summary:</strong> DenseNet + Deep Forest robustly handles imbalanced data.</p>
+      <p><strong>Results:</strong> Accuracy: 98.3%, F1: 96%</p>
+    </article>
+    <!-- 18 -->
+    <article>
+      <h3><a href="https://doi.org/10.1016/j.cmpb.2024.107452" target="_blank">Multi‑modal DL Fusion for Clinical + Imaging</a></h3>
+      <p><strong>Modality:</strong> Mammography + EHR</p>
+      <p><strong>Summary:</strong> Attention-based fusion of imaging and patient data.</p>
+      <p><strong>Results:</strong> AUC: 0.985, F1: 95%</p>
     </article>
   </main>
+
   <footer>&copy; 2025 DecodeDx</footer>
+
+  <script>
+    function filterPapers() {
+      const filter = document.getElementById('searchBox').value.toLowerCase();
+      document.querySelectorAll('article').forEach(a => {
+        a.style.display = a.innerText.toLowerCase().includes(filter)? '' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
