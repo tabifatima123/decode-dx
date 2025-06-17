@@ -1,4 +1,9 @@
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
