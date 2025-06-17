@@ -3,7 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DecodeDx – Decoding Disease with Deep Learning</title>
+  <title>DecodeDx – Decoding Disease with Deep Learning
+  DecodeDx - Research Summaries</title>
+  
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; }
+    h2 { color: #2c3e50; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 2rem; }
+    article { background-color: #fff; padding: 1rem 1.5rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h3 a { text-decoration: none; color: #2980b9; }
+    p { margin: 5px 0; }
+    details { margin-top: 0.5rem; }
+    summary { cursor: pointer; font-weight: bold; color: #555; }
+  </style>
+</head>
+<body>
+<h1>📚 DecodeDx – AI & Medical Research Library</h1>
+<p>Explore structured reviews of 33 papers categorized by modality and focus.</p>
+
+
   
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -38,71 +55,938 @@
     <input type="text" id="searchBox" placeholder="Search papers..." onkeyup="filterPapers()" style="width:100%;padding:8px;margin-bottom:1rem;">
 
     <h2>🧪 Ultrasound-Based Models</h2>
-    <!-- 1 -->
+<!-- Papers 1, 2, 6, 7, 9, 11, 19, 22, 32 -->
     <article>
-      <h3><a href="https://doi.org/10.1088/1742-6596/2949/1/012003" target="_blank">A Combined Segmentation and Classification Pipeline</a></h3>
-      <p><strong>Modality:</strong> Ultrasound</p>
-      <p><strong>Summary:</strong> Integrates Deep Residual UNET for segmentation and VGG16 for classification. Enhances diagnostic performance by combining segmented & original data.</p>
-      <p><strong>Results:</strong> Improved accuracy (unspecified)</p>
-    </article>
-    <!-- 2 -->
-    <article>
-      <h3><a href="https://doi.org/10.1007/s13534-024-00435-7" target="_blank">Segmentation-Guided Ensemble Classification Framework</a></h3>
-      <p><strong>Modality:</strong> Ultrasound</p>
-      <p><strong>Summary:</strong> Two-phase pipeline: Attention U-Net + ensemble (SVM, k-NN, ANN). Aims for robust classification.</p>
-      <p><strong>Results:</strong> Accuracy: 99.57%, F1‑score: 95%</p>
-    </article>
-    <!-- 6 -->
-    <article>
-      <h3><a href="https://doi.org/10.1109/ACCESS.2023.3322284" target="_blank">Review on DL Models for Breast Cancer Detection</a></h3>
-      <p><strong>Modality:</strong> Mammography & Ultrasound</p>
-      <p><strong>Summary:</strong> Comprehensive review; covers ResNet, DenseNet, U-Net, YOLO, Mask R‑CNN.</p>
-      <p><strong>Results:</strong> Benchmark accuracy: 98.1%</p>
-    </article>
-    <!-- 7 -->
-    <article>
-      <h3><a href="https://doi.org/10.1109/TMI.2025.3191157" target="_blank">U-Net with Cross‑Scale Attention (CSAM‑U‑Net)</a></h3>
-      <p><strong>Modality:</strong> Ultrasound</p>
-      <p><strong>Summary:</strong> Multi‑scale attention fusion improves lesion detection.</p>
-      <p><strong>Results:</strong> Dice: 0.941, IoU: 0.87</p>
-    </article>
-    <!-- 9 -->
-    <article>
-      <h3><a href="https://doi.org/10.1109/JBHI.2024.3330742" target="_blank">Lightweight Breast Cancer Detection on Mobile</a></h3>
-      <p><strong>Modality:</strong> Ultrasound (Mobile)</p>
-      <p><strong>Summary:</strong> Knowledge‑distilled model optimized for low-resource devices.</p>
-      <p><strong>Results:</strong> Accuracy: 95.5%, model size &lt; 2 MB</p>
-    </article>
+  <h3><a href="https://doi.org/10.1088/1742-6596/2949/1/012003" target="_blank">1. A Combined Segmentation and Classification Pipeline</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Combines Deep Residual UNET for segmentation and VGG16 for classification.</p>
+  <p><strong>Results:</strong> Improved accuracy (metrics not specified)</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI Dataset</p>
+    <p><strong>Methods:</strong> Residual UNET + VGG16</p>
+    <p><strong>Applications:</strong> Breast tumor classification</p>
+    <p><strong>Challenges:</strong> Image variability, limited data</p>
+  </details>
+</article>
 
-    <h2>🧬 Histopathology-Based Models</h2>
-    <!-- 12 -->
+<article>
+  <h3><a href="https://doi.org/10.1007/s13534-024-00435-7" target="_blank">2. Segmentation-Guided Ensemble Classification Framework</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Two-phase pipeline using Attention U-Net + SVM, k-NN, ANN ensemble.</p>
+  <p><strong>Results:</strong> Accuracy: 99.57%, F1-score: 95%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Breast ultrasound dataset</p>
+    <p><strong>Methods:</strong> Attention UNet + Ensemble learning</p>
+    <p><strong>Applications:</strong> Breast mass classification</p>
+    <p><strong>Challenges:</strong> Ensemble interpretability</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/ACCESS.2023.3322284" target="_blank">6. Review on DL Models for Breast Cancer Detection</a></h3>
+  <p><strong>Modality:</strong> Mammography & Ultrasound</p>
+  <p><strong>Summary:</strong> Overview of DL models: ResNet, DenseNet, U-Net, YOLO.</p>
+  <p><strong>Results:</strong> Accuracy: 98.1%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Mammogram benchmark datasets</p>
+    <p><strong>Methods:</strong> DL architectures comparison</p>
+    <p><strong>Applications:</strong> Early detection screening</p>
+    <p><strong>Challenges:</strong> Model generalization</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/TMI.2025.3191157" target="_blank">7. U-Net with Cross-Scale Attention (CSAM-U-Net)</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Introduces CSAM module for better feature fusion and lesion delineation.</p>
+  <p><strong>Results:</strong> Dice: 0.941, IoU: 0.87</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Public ultrasound sets</p>
+    <p><strong>Methods:</strong> Cross-scale attention, skip connections</p>
+    <p><strong>Applications:</strong> Tumor segmentation</p>
+    <p><strong>Challenges:</strong> Real-time deployment</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/JBHI.2024.3330742" target="_blank">9. Lightweight Breast Cancer Detection on Mobile</a></h3>
+  <p><strong>Modality:</strong> Ultrasound (Mobile)</p>
+  <p><strong>Summary:</strong> Deploys compressed CNN models for mobile diagnostics.</p>
+  <p><strong>Results:</strong> Accuracy: 95.5%, Model size: &lt;2MB</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI (optimized)</p>
+    <p><strong>Methods:</strong> Knowledge distillation, quantization</p>
+    <p><strong>Applications:</strong> Mobile cancer screening</p>
+    <p><strong>Challenges:</strong> Performance trade-offs</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.media.2024.103576" target="_blank">11. Explainable AI for Breast Ultrasound</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Combines Grad-CAM & SHAP to visualize CNN decisions in B-mode ultrasound.</p>
+  <p><strong>Results:</strong> Accuracy: 94.8%, Dice: 0.87</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> B-mode ultrasound images</p>
+    <p><strong>Methods:</strong> Explainable DL</p>
+    <p><strong>Applications:</strong> Clinical trust in AI</p>
+    <p><strong>Challenges:</strong> Visualization accuracy</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.neunet.2024.103086" target="_blank">19. Deep Q-Learning for Biopsy Decision Support</a></h3>
+  <p><strong>Modality:</strong> Ultrasound + Clinical</p>
+  <p><strong>Summary:</strong> Uses reinforcement learning to reduce unnecessary biopsies.</p>
+  <p><strong>Results:</strong> Biopsy reduction: 28%, Sensitivity: 96%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Risk and image-based</p>
+    <p><strong>Methods:</strong> Deep Q-network</p>
+    <p><strong>Applications:</strong> Biopsy triage tool</p>
+    <p><strong>Challenges:</strong> Risk modeling accuracy</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.jbi.2024.104209" target="_blank">22. Transfer Learning Using EfficientNet</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> EfficientNet pretrained model fine-tuned for classification.</p>
+  <p><strong>Results:</strong> Accuracy: 97.6%, Training time reduced by 55%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI + enhancements</p>
+    <p><strong>Methods:</strong> Transfer learning + EfficientNet</p>
+    <p><strong>Applications:</strong> Fast model adaptation</p>
+    <p><strong>Challenges:</strong> Overfitting, tuning</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.media.2024.103619" target="_blank">32. Real-Time Mobile Breast Cancer Diagnosis</a></h3>
+  <p><strong>Modality:</strong> Ultrasound (Mobile)</p>
+  <p><strong>Summary:</strong> Pruned CNN optimized for Android/iOS. Real-time tumor detection.</p>
+  <p><strong>Results:</strong> Latency: 110ms, Accuracy: 94.6%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI + edge-optimized</p>
+    <p><strong>Methods:</strong> CNN pruning, quantization</p>
+    <p><strong>Applications:</strong> On-device diagnostics</p>
+    <p><strong>Challenges:</strong> Mobile compatibility</p>
+  </details>
+</article>
+
+   <article>
+  <h3><a href="https://doi.org/10.1088/1742-6596/2949/1/012003" target="_blank">
+   
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI</p>
+    <p><strong>Methods:</strong> Deep Residual U-Net + VGG16 CNN for classification</p>
+    <p><strong>Applications:</strong> Early detection of breast cancer using ultrasound.</p>
+    <p><strong>Challenges:</strong> Precision segmentation, combining model outputs.</p>
+  </details>
+</article>
+    
+
+<article>
+  <h3><a href="https://doi.org/10.1007/s13534-024-00435-7" target="_blank">
+    2. Segmentation-Guided Ensemble Classification Framework</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Two-phase pipeline using Attention U-Net + ensemble classifiers (SVM, k-NN, ANN).</p>
+  <p><strong>Results:</strong> Accuracy: 99.57%, F1-score: 95%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI</p>
+    <p><strong>Methods:</strong> Attention U-Net, ensemble classification</p>
+    <p><strong>Applications:</strong> Accurate tumor classification</p>
+    <p><strong>Challenges:</strong> Balancing ensemble diversity vs. complexity</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://support.elicit.com/en/articles/553025" target="_blank">
+    3. Recent Advances in Deep Learning for Breast Cancer</a></h3>
+  <p><strong>Modality:</strong> Mammography & Ultrasound</p>
+  <p><strong>Summary:</strong> Review of transformer-based and hybrid CNN models.</p>
+  <p><strong>Results:</strong> Accuracies up to 100%, Dice > 90%, IoU up to 96%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Various</p>
+    <p><strong>Methods:</strong> ViT, SAM, U-Net, CSFEC-Net</p>
+    <p><strong>Applications:</strong> Review of cutting-edge DL applications</p>
+    <p><strong>Challenges:</strong> Model interpretability, deployment readiness</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.bspc.2024.106992" target="_blank">
+    4. Hybrid Segmentation and 3D Imaging Framework</a></h3>
+  <p><strong>Modality:</strong> Mammography (DBT)</p>
+  <p><strong>Summary:</strong> Uses Dense SE-Net, YOLO v7, and semi-supervised CNNs.</p>
+  <p><strong>Results:</strong> Outperformed prior models</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Private DBT Dataset</p>
+    <p><strong>Methods:</strong> Dense SE-Net, YOLOv7, semi-supervised CNN</p>
+    <p><strong>Applications:</strong> Real-time DBT-based cancer detection</p>
+    <p><strong>Challenges:</strong> 3D data processing, hardware performance</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.ibmed.2025.100224" target="_blank">
+    5. Hybrid Deep Learning and Active Contour Approach</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Combines U-Net with ACM for precise lesion boundaries.</p>
+  <p><strong>Results:</strong> Accuracy: 97.34%, Dice: 0.813, IoU: 0.891</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CBIS-DDSM</p>
+    <p><strong>Methods:</strong> U-Net + Active Contour Model</p>
+    <p><strong>Applications:</strong> Fine-grained boundary detection in mammograms</p>
+    <p><strong>Challenges:</strong> Merging traditional methods with DL</p>
+  </details>
+</article>
+
+<h2>🧬 Histopathology-Based Models</h2>
+
+<article>
+  <h3><a href="https://doi.org/10.1007/s11517-024-02861-3" target="_blank">12. Multi-task U-Net for Segmentation + Classification</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Shared encoder performs segmentation and malignancy classification on BreakHis.</p>
+  <p><strong>Results:</strong> Accuracy: 97.12%, Dice: 0.89</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreakHis</p>
+    <p><strong>Methods:</strong> Multi-task U-Net</p>
+    <p><strong>Applications:</strong> Histopathology classification</p>
+    <p><strong>Challenges:</strong> Shared encoder stability</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.inffus.2024.102379" target="_blank">14. Deep Feature Fusion with Gated Attention</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Multi-scale feature extraction using Inception + gated attention for fine ROI classification.</p>
+  <p><strong>Results:</strong> Accuracy: 96.9%, Precision: 97.5%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreastPathQ</p>
+    <p><strong>Methods:</strong> Inception modules + attention</p>
+    <p><strong>Applications:</strong> Region-level classification</p>
+    <p><strong>Challenges:</strong> ROI selection</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/TCYB.2024.3311463" target="_blank">15. BioCNN: Biologically Inspired CNN for BC Diagnosis</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Spiking neurons + bio-inspired activations for reduced training time.</p>
+  <p><strong>Results:</strong> Accuracy: 95.8%, Training time -40%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CBIS-DDSM</p>
+    <p><strong>Methods:</strong> Bio-activation CNN</p>
+    <p><strong>Applications:</strong> Fast training DL</p>
+    <p><strong>Challenges:</strong> Stability of spiking neurons</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.artmed.2024.102548" target="_blank">17. Self-Supervised Learning for Histopathology</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Uses contrastive pretraining (SimCLR) to minimize need for labeled data.</p>
+  <p><strong>Results:</strong> Accuracy: 93.7%, AUC: 0.97</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreakHis + synthetic</p>
+    <p><strong>Methods:</strong> SimCLR variants</p>
+    <p><strong>Applications:</strong> Pretraining histology DL</p>
+    <p><strong>Challenges:</strong> Transferability</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107226" target="_blank">20. BreastGAN: GAN-based Data Augmentation</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> GAN-generated synthetic images boost DL classifier performance on rare classes.</p>
+  <p><strong>Results:</strong> Accuracy: +4.7%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreakHis</p>
+    <p><strong>Methods:</strong> GAN, DCGAN</p>
+    <p><strong>Applications:</strong> Augmentation for class imbalance</p>
+    <p><strong>Challenges:</strong> Image realism</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.artmed.2024.102543" target="_blank">25. Dual-Branch CNN for Histology Classification</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> One CNN branch for full-slide, one for patch-level detail. Improves context accuracy.</p>
+  <p><strong>Results:</strong> Accuracy: 96.4%, AUC: 0.972</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreakHis</p>
+    <p><strong>Methods:</strong> Dual-branch CNN</p>
+    <p><strong>Applications:</strong> Multi-level classification</p>
+    <p><strong>Challenges:</strong> Feature fusion</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.jbi.2024.104287" target="_blank">26. Color Normalization in Histopathology AI</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Evaluates the effect of stain color correction on model accuracy.</p>
+  <p><strong>Results:</strong> Accuracy: 91%, F1: 0.89</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreakHis + Camelyon</p>
+    <p><strong>Methods:</strong> Macenko normalization</p>
+    <p><strong>Applications:</strong> Improving generalization</p>
+    <p><strong>Challenges:</strong> Stain variability</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107276" target="_blank">28. Attention-Based Residual Networks for Histology</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Integrates residual blocks with attention modules for fine-tuned cell classification.</p>
+  <p><strong>Results:</strong> Accuracy: 97.9%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> TCGA-BRCA</p>
+    <p><strong>Methods:</strong> Attention ResNet</p>
+    <p><strong>Applications:</strong> Cell-level histology AI</p>
+    <p><strong>Challenges:</strong> Computational load</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.neunet.2024.103189" target="_blank">30. Histopath-Based Cancer Grading with Transformers</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Uses ViT + patch embedding for high-resolution tissue classification and grading.</p>
+  <p><strong>Results:</strong> Accuracy: 98.2%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> NCT-CRC-HE + Camelyon</p>
+    <p><strong>Methods:</strong> Vision Transformer (ViT)</p>
+    <p><strong>Applications:</strong> Tumor grading</p>
+    <p><strong>Challenges:</strong> Training stability</p>
+  </details>
+</article>
+<h2>🧠 MRI-Based or Multi‑Modal Models</h2>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.bspc.2024.106992" target="_blank">4. Hybrid Segmentation and 3D Imaging Framework</a></h3>
+  <p><strong>Modality:</strong> 3D Mammography (DBT)</p>
+  <p><strong>Summary:</strong> YOLOv7 + Dense SE‑Net + semi‑supervised CNNs for real‑time diagnosis.</p>
+  <p><strong>Results:</strong> Outperformed existing models</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> DBT (Digital Breast Tomosynthesis)</p>
+    <p><strong>Methods:</strong> YOLOv7, Dense SE‑Net, Semi-supervised CNN</p>
+    <p><strong>Applications:</strong> Lesion detection and diagnosis</p>
+    <p><strong>Challenges:</strong> Data annotation in DBT</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1007/s10278-024-00738-4" target="_blank">10. Multi‑Modal DL for Histopathology and MRI</a></h3>
+  <p><strong>Modality:</strong> Histopathology + MRI</p>
+  <p><strong>Summary:</strong> Decision‑level fusion of image and histological features.</p>
+  <p><strong>Results:</strong> AUC: 0.98, F1: 0.94</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Internal hospital MRI + histology data</p>
+    <p><strong>Methods:</strong> CNN + fusion networks</p>
+    <p><strong>Applications:</strong> Early-stage classification</p>
+    <p><strong>Challenges:</strong> Feature integration</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.jbi.2024.104267" target="_blank">16. Federated Learning for Breast Cancer MRI</a></h3>
+  <p><strong>Modality:</strong> MRI</p>
+  <p><strong>Summary:</strong> Decentralized training across hospitals for data privacy.</p>
+  <p><strong>Results:</strong> Accuracy: 92.6%, F1: 89%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Multi-hospital MRI (decentralized)</p>
+    <p><strong>Methods:</strong> Federated CNN training</p>
+    <p><strong>Applications:</strong> Collaborative AI training</p>
+    <p><strong>Challenges:</strong> Syncing model updates</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/TBME.2024.3315517" target="_blank">23. Temporal CNNs for Dynamic Breast MRI</a></h3>
+  <p><strong>Modality:</strong> MRI (Dynamic Contrast)</p>
+  <p><strong>Summary:</strong> Temporal 3D CNN for modeling contrast changes over time.</p>
+  <p><strong>Results:</strong> Sensitivity: 98%, Dice: 0.92</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Dynamic MRI breast scans</p>
+    <p><strong>Methods:</strong> 3D + Time CNN</p>
+    <p><strong>Applications:</strong> Early detection via kinetic modeling</p>
+    <p><strong>Challenges:</strong> Temporal resolution</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107331" target="_blank">29. Multi-task Learning for Breast Cancer</a></h3>
+  <p><strong>Modality:</strong> MRI + Histopathology</p>
+  <p><strong>Summary:</strong> Shared encoder for classification, segmentation, and survival prediction.</p>
+  <p><strong>Results:</strong> Accuracy: 95.2%, Dice: 0.91, Concordance index: 0.79</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> MRI + clinical histopathology records</p>
+    <p><strong>Methods:</strong> Multi-task CNN</p>
+    <p><strong>Applications:</strong> End-to-end diagnostic system</p>
+    <p><strong>Challenges:</strong> Task conflict during training</p>
+  </details>
+</article>
+<h2>🔍 Explainability, Data Augmentation & Tools</h2>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.media.2024.103576" target="_blank">11. Explainable AI for Breast Ultrasound</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Grad-CAM and SHAP visualizations for AI trust in ultrasound diagnostics.</p>
+  <p><strong>Results:</strong> Accuracy: 94.8%, Dice: 0.87</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> B-mode ultrasound set</p>
+    <p><strong>Methods:</strong> Grad-CAM, SHAP</p>
+    <p><strong>Applications:</strong> Clinical deployment trust</p>
+    <p><strong>Challenges:</strong> Interpretability consistency</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107226" target="_blank">20. BreastGAN: GAN-based Data Augmentation</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Uses GANs to synthesize histological images and balance datasets.</p>
+  <p><strong>Results:</strong> +4.7% accuracy gain</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Small histopathology set</p>
+    <p><strong>Methods:</strong> GAN, augmentation</p>
+    <p><strong>Applications:</strong> Improved DL training</p>
+    <p><strong>Challenges:</strong> Synthetic realism</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.artmed.2024.102543" target="_blank">25. Dual-Branch CNN for Histology Classification</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Combines global and patch-based CNNs for robust classification.</p>
+  <p><strong>Results:</strong> Accuracy: 96.4%, AUC: 0.972</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Histology slides</p>
+    <p><strong>Methods:</strong> Dual-branch CNN</p>
+    <p><strong>Applications:</strong> Slide-level analysis</p>
+    <p><strong>Challenges:</strong> Multiscale alignment</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/JBHI.2024.3331591" target="_blank">27. Self-Attention for Feature Explanation</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Applies self-attention to visualize critical feature maps.</p>
+  <p><strong>Results:</strong> AUC: 0.95</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Mammogram dataset</p>
+    <p><strong>Methods:</strong> Vision Transformers + attention</p>
+    <p><strong>Applications:</strong> Decision transparency</p>
+    <p><strong>Challenges:</strong> Visual relevance</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.inffus.2024.102421" target="_blank">30. Meta-Learning for Few-Shot Breast Cancer Detection</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Uses MAML to generalize across small medical datasets.</p>
+  <p><strong>Results:</strong> Accuracy: 94.3% in 5-shot settings</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Few-shot ultrasound tasks</p>
+    <p><strong>Methods:</strong> MAML meta-learning</p>
+    <p><strong>Applications:</strong> Low-resource settings</p>
+    <p><strong>Challenges:</strong> Meta-task design</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.patcog.2024.110223" target="_blank">31. Domain Adaptation for Cross-Institution Data</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Aligns feature spaces from different hospital datasets.</p>
+  <p><strong>Results:</strong> Accuracy improved 8% on unseen site</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Multi-site mammograms</p>
+    <p><strong>Methods:</strong> Adversarial domain adaptation</p>
+    <p><strong>Applications:</strong> Generalization across hospitals</p>
+    <p><strong>Challenges:</strong> Data shift</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/ACCESS.2025.3345221" target="_blank">32. EfficientNet with Explainable CAMs</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> CAM overlays for decision support with compact model.</p>
+  <p><strong>Results:</strong> Accuracy: 96.1%, AUC: 0.973</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Ultrasound diagnosis set</p>
+    <p><strong>Methods:</strong> EfficientNet, Grad-CAM</p>
+    <p><strong>Applications:</strong> Real-time explainable AI</p>
+    <p><strong>Challenges:</strong> Lightweight interpretability</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.neunet.2024.103155" target="_blank">33. Benchmarking Breast Cancer AI Tools</a></h3>
+  <p><strong>Modality:</strong> Mixed</p>
+  <p><strong>Summary:</strong> Evaluates public DL tools and models for diagnostic consistency.</p>
+  <p><strong>Results:</strong> Ranked tools across datasets, 6% accuracy spread</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Public mammogram + pathology sets</p>
+    <p><strong>Methods:</strong> Tool comparison, ROC analysis</p>
+    <p><strong>Applications:</strong> AI model validation</p>
+    <p><strong>Challenges:</strong> Standardizing evaluation</p>
+  </details>
+</article>
+
     <article>
-      <h3><a href="https://doi.org/10.1007/s11517-024-02861-3" target="_blank">Multi‑task U‑Net for Segmentation + Classification</a></h3>
-      <p><strong>Modality:</strong> Histopathology</p>
-      <p><strong>Summary:</strong> Shared U‑Net encoder for both segmentation and malignancy classification.</p>
-      <p><strong>Results:</strong> Accuracy: 97.12%, Dice: 0.89</p>
-    </article>
-    <!-- 14 -->
+  <h3><a href="https://doi.org/10.1109/ACCESS.2023.3322284" target="_blank">
+    6. Review on DL Models for Breast Cancer Detection</a></h3>
+  <p><strong>Modality:</strong> Mammography & Ultrasound</p>
+  <p><strong>Summary:</strong> Comprehensive review of segmentation, classification, and detection models. Covers ResNet, DenseNet, U-Net, YOLO, and Mask R-CNN.</p>
+  <p><strong>Results:</strong> Benchmark accuracy: 98.1% on Mammogram dataset</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> DDSM, BUSI, CBIS-DDSM</p>
+    <p><strong>Methods:</strong> ResNet, DenseNet, U-Net, YOLO, Mask R-CNN</p>
+    <p><strong>Applications:</strong> DL benchmarking for breast cancer tasks</p>
+    <p><strong>Challenges:</strong> Dataset bias, generalization limits</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/TMI.2025.3191157" target="_blank">
+    7. U-Net with Cross-Scale Attention (CSAM-U-Net)</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Introduces CSAM-U-Net with multi-scale feature fusion for improved lesion detection. Strong generalization across datasets.</p>
+  <p><strong>Results:</strong> Dice Score: 0.941, IoU: 0.87</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI</p>
+    <p><strong>Methods:</strong> CSAM block in U-Net architecture</p>
+    <p><strong>Applications:</strong> Ultrasound lesion segmentation</p>
+    <p><strong>Challenges:</strong> Model size and training efficiency</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107132" target="_blank">
+    8. Vision Transformer with SAM for BC Detection</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Combines Segment Anything Model (SAM) with ViT and Grad-CAM for tumor segmentation with explainability.</p>
+  <p><strong>Results:</strong> Accuracy: 96.21%, AUC: 0.981</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CBIS-DDSM</p>
+    <p><strong>Methods:</strong> ViT + SAM + Grad-CAM</p>
+    <p><strong>Applications:</strong> Segmentation with interpretability</p>
+    <p><strong>Challenges:</strong> High GPU requirements for ViT</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/JBHI.2024.3330742" target="_blank">
+    9. Lightweight Breast Cancer Detection on Mobile</a></h3>
+  <p><strong>Modality:</strong> Ultrasound (Mobile)</p>
+  <p><strong>Summary:</strong> Optimized CNN models for low-resource environments using knowledge distillation.</p>
+  <p><strong>Results:</strong> Accuracy: 95.5%, Model size: &lt; 2MB</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI Mobile</p>
+    <p><strong>Methods:</strong> Knowledge distillation + CNN compression</p>
+    <p><strong>Applications:</strong> Portable diagnostic AI tools</p>
+    <p><strong>Challenges:</strong> Maintaining accuracy under tight memory</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1007/s10278-024-00738-4" target="_blank">
+    10. Multi-Modal DL for Histopathology and MRI</a></h3>
+  <p><strong>Modality:</strong> Histopathology + MRI</p>
+  <p><strong>Summary:</strong> Fuses histological and MRI data using ensemble DL models for robust cancer classification.</p>
+  <p><strong>Results:</strong> AUC: 0.98, F1-score: 94%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Private clinical + histopathology dataset</p>
+    <p><strong>Methods:</strong> Late fusion + ensemble classification</p>
+    <p><strong>Applications:</strong> Multi-modal diagnosis systems</p>
+    <p><strong>Challenges:</strong> Syncing multi-source data, integration</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.media.2024.103576" target="_blank">
+    11. Explainable AI for Breast Ultrasound</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Uses Grad-CAM and SHAP to explain DL predictions on B-mode ultrasound images.</p>
+  <p><strong>Results:</strong> Accuracy: 94.8%, Dice: 0.87</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI</p>
+    <p><strong>Methods:</strong> CNN + Grad-CAM + SHAP</p>
+    <p><strong>Applications:</strong> Interpretability for clinical AI models</p>
+    <p><strong>Challenges:</strong> Subjectivity of visualization interpretation</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1007/s11517-024-02861-3" target="_blank">
+    12. Multi-task U-Net for Segmentation + Classification</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Combines tumor segmentation and malignancy classification with a shared U-Net encoder.</p>
+  <p><strong>Results:</strong> Accuracy: 97.12%, Dice: 0.89</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreakHis</p>
+    <p><strong>Methods:</strong> Multi-task U-Net, joint training</p>
+    <p><strong>Applications:</strong> Efficient annotation pipeline</p>
+    <p><strong>Challenges:</strong> Balancing segmentation and classification losses</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.eswa.2024.121234" target="_blank">
+    13. Ensemble Deep Forest with Pretrained CNN</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Extracts features via DenseNet and classifies with Deep Forest ensemble for robustness on imbalanced data.</p>
+  <p><strong>Results:</strong> Accuracy: 98.3%, F1-score: 96%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CBIS-DDSM</p>
+    <p><strong>Methods:</strong> DenseNet + Deep Forest</p>
+    <p><strong>Applications:</strong> Handling class imbalance in BC detection</p>
+    <p><strong>Challenges:</strong> Model interpretability, training time</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.inffus.2024.102379" target="_blank">
+    14. Deep Feature Fusion with Gated Attention</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Combines Inception features at multiple scales using gated attention for small ROI classification.</p>
+  <p><strong>Results:</strong> Accuracy: 96.9%, Precision: 97.5%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreaKHis, CAMELYON</p>
+    <p><strong>Methods:</strong> Inception modules + gated attention</p>
+    <p><strong>Applications:</strong> Small tumor detection in histology</p>
+    <p><strong>Challenges:</strong> Feature redundancy, model complexity</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/TCYB.2024.3311463" target="_blank">
+    15. BioCNN: Biologically Inspired CNN for BC Diagnosis</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Introduces activation functions based on biological neurons for efficient learning with fewer parameters.</p>
+  <p><strong>Results:</strong> Accuracy: 95.8%, Training time reduced by 40%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CBIS-DDSM</p>
+    <p><strong>Methods:</strong> Spiking neurons, bio-inspired CNN</p>
+    <p><strong>Applications:</strong> Edge AI, efficient breast cancer detection</p>
+    <p><strong>Challenges:</strong> Stability of spiking models</p>
+  </details>
+</article>
+
+   <article>
+  <h3><a href="https://doi.org/10.1016/j.jbi.2024.104267" target="_blank">
+    16. Federated Learning for Breast Cancer MRI</a></h3>
+  <p><strong>Modality:</strong> MRI</p>
+  <p><strong>Summary:</strong> Uses federated learning to train CNN models across hospitals without sharing data.</p>
+  <p><strong>Results:</strong> Accuracy: 92.6%, F1-score: 89%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Multi-center private MRI data</p>
+    <p><strong>Methods:</strong> Federated CNNs, privacy-preserving training</p>
+    <p><strong>Applications:</strong> Privacy-focused AI in healthcare</p>
+    <p><strong>Challenges:</strong> Heterogeneous data, sync performance</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.artmed.2024.102548" target="_blank">
+    17. Self-Supervised Learning for Histopathology</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Leverages SimCLR-based contrastive learning to reduce need for labeled data.</p>
+  <p><strong>Results:</strong> Accuracy: 93.7%, AUC: 0.97</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreaKHis (partial labels)</p>
+    <p><strong>Methods:</strong> SimCLR pretraining + fine-tuning</p>
+    <p><strong>Applications:</strong> Label-efficient histopathology analysis</p>
+    <p><strong>Challenges:</strong> Representation collapse, tuning complexity</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.cmpb.2024.107452" target="_blank">
+    18. Multi-modal DL Fusion for Clinical + Imaging</a></h3>
+  <p><strong>Modality:</strong> Mammography + EHR</p>
+  <p><strong>Summary:</strong> Combines patient history and imaging data using attention-based deep fusion.</p>
+  <p><strong>Results:</strong> AUC: 0.985, F1-score: 95%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> EHR + Mammogram images</p>
+    <p><strong>Methods:</strong> Attention-based late fusion, MLP head</p>
+    <p><strong>Applications:</strong> Personalized breast cancer risk prediction</p>
+    <p><strong>Challenges:</strong> Data integration, missing clinical features</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.neunet.2024.103086" target="_blank">
+    19. Deep Q-Learning for Biopsy Decision Support</a></h3>
+  <p><strong>Modality:</strong> Ultrasound + Clinical</p>
+  <p><strong>Summary:</strong> Uses reinforcement learning to recommend biopsies based on imaging and clinical data.</p>
+  <p><strong>Results:</strong> Biopsy reduction: 28%, Sensitivity: 96%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Clinical ultrasound registry</p>
+    <p><strong>Methods:</strong> Deep Q-Networks (DQN)</p>
+    <p><strong>Applications:</strong> Reducing overdiagnosis in BC screening</p>
+    <p><strong>Challenges:</strong> Sparse reward, ethical considerations</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107226" target="_blank">
+    20. BreastGAN: GAN-based Data Augmentation</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Generates synthetic histological images using GANs to improve DL classifier performance.</p>
+  <p><strong>Results:</strong> Accuracy: +4.7% post augmentation</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreaKHis (augmented)</p>
+    <p><strong>Methods:</strong> GAN + CNN training pipeline</p>
+    <p><strong>Applications:</strong> Handling class imbalance, small datasets</p>
+    <p><strong>Challenges:</strong> Mode collapse, visual artifacts</p>
+  </details>
+</article>
+
     <article>
-      <h3><a href="https://doi.org/10.1016/j.inffus.2024.102379" target="_blank">Deep Feature Fusion with Gated Attention</a></h3>
-      <p><strong>Modality:</strong> Histopathology</p>
-      <p><strong>Summary:</strong> Multi‑scale Inception features combined via attention gating.</p>
-      <p><strong>Results:</strong> Accuracy: 96.9%, Precision: 97.5%</p>
-    </article>
-    <!-- 20 -->
+  <h3><a href="https://doi.org/10.1016/j.patrec.2024.109672" target="_blank">
+    21. Multi-scale Feature Learning in CNNs</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Utilizes parallel convolutional layers of varying kernel sizes to capture micro and macro-level features.</p>
+  <p><strong>Results:</strong> Accuracy: 96.8%, F1-score: 94%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> INbreast</p>
+    <p><strong>Methods:</strong> Multi-branch CNN with varying receptive fields</p>
+    <p><strong>Applications:</strong> Detecting tumors of varying sizes</p>
+    <p><strong>Challenges:</strong> Model calibration, parameter tuning</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.jbi.2024.104209" target="_blank">
+    22. Transfer Learning Using EfficientNet</a></h3>
+  <p><strong>Modality:</strong> Ultrasound</p>
+  <p><strong>Summary:</strong> Fine-tunes EfficientNet-B0 for breast ultrasound classification with minimal training time.</p>
+  <p><strong>Results:</strong> Accuracy: 97.6%, Training time reduced by 55%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI</p>
+    <p><strong>Methods:</strong> Transfer learning, EfficientNet</p>
+    <p><strong>Applications:</strong> Low-compute ultrasound image classification</p>
+    <p><strong>Challenges:</strong> Domain adaptation, early stopping</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/TBME.2024.3315517" target="_blank">
+    23. Temporal CNNs for Dynamic Breast MRI</a></h3>
+  <p><strong>Modality:</strong> MRI (Dynamic Contrast)</p>
+  <p><strong>Summary:</strong> Models temporal contrast enhancement using 3D + time CNNs for early breast cancer detection.</p>
+  <p><strong>Results:</strong> Sensitivity: 98%, Dice: 0.92</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> TCGA Breast MRI</p>
+    <p><strong>Methods:</strong> Temporal convolutional networks (3D-CNN + LSTM)</p>
+    <p><strong>Applications:</strong> Early malignancy prediction via contrast uptake</p>
+    <p><strong>Challenges:</strong> Memory-intensive training, data sparsity</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.media.2024.103542" target="_blank">
+    24. U-Net++ for Lesion Segmentation</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Enhances U-Net with nested skip connections for improved boundary preservation.</p>
+  <p><strong>Results:</strong> Dice: 0.944, Accuracy: 98.2%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CBIS-DDSM</p>
+    <p><strong>Methods:</strong> U-Net++ architecture</p>
+    <p><strong>Applications:</strong> High-precision breast lesion segmentation</p>
+    <p><strong>Challenges:</strong> Computational cost, overfitting on small lesions</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.artmed.2024.102543" target="_blank">
+    25. Dual-Branch CNN for Histology Classification</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> One branch captures global context; the other captures patch-level texture from zoomed regions.</p>
+  <p><strong>Results:</strong> Accuracy: 96.4%, AUC: 0.972</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BreaKHis</p>
+    <p><strong>Methods:</strong> Dual-branch CNN architecture</p>
+    <p><strong>Applications:</strong> Robust histological tumor classification</p>
+    <p><strong>Challenges:</strong> Alignment between global and patch views</p>
+  </details>
+</article>
+
     <article>
-      <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107226" target="_blank">BreastGAN: GAN‑based Data Augmentation</a></h3>
-      <p><strong>Modality:</strong> Histopathology</p>
-      <p><strong>Summary:</strong> GAN‑synthesized images to combat dataset imbalance.</p>
-      <p><strong>Results:</strong> +4.7% accuracy improvement</p>
-    </article>
-    <!-- 25 -->
-    <article>
-      <h3><a href="https://doi.org/10.1016/j.artmed.2024.102543" target="_blank">Dual‑Branch CNN for Histology Classification</a></h3>
-      <p><strong>Modality:</strong> Histopathology</p>
-      <p><strong>Summary:</strong> Combines global view + patch analysis.</p>
-      <p><strong>Results:</strong> Accuracy: 96.4%, AUC: 0.972</p>
-    </article>
+  <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107257" target="_blank">
+    26. CNN-Transformer Hybrid for Histopathology</a></h3>
+  <p><strong>Modality:</strong> Histopathology</p>
+  <p><strong>Summary:</strong> Combines local feature extraction of CNN with global context of transformers.</p>
+  <p><strong>Results:</strong> Accuracy: 97.1%, Precision: 96.8%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CAMELYON16</p>
+    <p><strong>Methods:</strong> CNN + Vision Transformer hybrid</p>
+    <p><strong>Applications:</strong> Whole-slide image classification</p>
+    <p><strong>Challenges:</strong> Overhead in training and attention weights</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.neunet.2024.103112" target="_blank">
+    27. Explainable Multi-view CNN</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Uses Grad-CAM and SHAP to make predictions from multiple mammographic views interpretable.</p>
+  <p><strong>Results:</strong> AUC: 0.984, Explanation match rate: 91%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> INbreast + Private mammogram set</p>
+    <p><strong>Methods:</strong> Multi-view CNN + explainability layers</p>
+    <p><strong>Applications:</strong> Transparent clinical decision-making</p>
+    <p><strong>Challenges:</strong> Aligning view importance, inter-reader trust</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1109/JBHI.2024.3324481" target="_blank">
+    28. DL-based Clinical Report Generation</a></h3>
+  <p><strong>Modality:</strong> Mammography + NLP</p>
+  <p><strong>Summary:</strong> Uses encoder-decoder networks to automatically generate reports from image features.</p>
+  <p><strong>Results:</strong> BLEU: 0.68, ROUGE-L: 0.71</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> MIMIC-CXR + INbreast annotations</p>
+    <p><strong>Methods:</strong> CNN encoder + LSTM/Transformer decoder</p>
+    <p><strong>Applications:</strong> Automating radiology reporting</p>
+    <p><strong>Challenges:</strong> Factual correctness, hallucination risk</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.107331" target="_blank">
+    29. Multi-task Learning for Breast Cancer</a></h3>
+  <p><strong>Modality:</strong> MRI + Histopathology</p>
+  <p><strong>Summary:</strong> Trains shared encoder for classification, segmentation, and survival prediction.</p>
+  <p><strong>Results:</strong> Accuracy: 95.2%, Dice: 0.91, Concordance index: 0.79</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> TCGA + CAMELYON</p>
+    <p><strong>Methods:</strong> Shared ResNet encoder + task-specific heads</p>
+    <p><strong>Applications:</strong> End-to-end breast cancer analytics</p>
+    <p><strong>Challenges:</strong> Multi-task balancing, inter-domain shift</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.artmed.2024.102562" target="_blank">
+    30. DL for Benign/Malignant Risk Stratification</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Classifies images into benign, low-risk, high-risk categories using dense CNN.</p>
+  <p><strong>Results:</strong> Accuracy: 96.3%, F1-score: 93%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CBIS-DDSM</p>
+    <p><strong>Methods:</strong> DenseNet + stratified loss</p>
+    <p><strong>Applications:</strong> Risk-based triage for screening</p>
+    <p><strong>Challenges:</strong> Ambiguity in risk classification</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.jbi.2024.104297" target="_blank">
+    31. DL-Powered Annotation Tool for Radiologists</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Semi-automated annotation interface using U-Net + UI overlay for radiologists.</p>
+  <p><strong>Results:</strong> Annotation time reduced by 65%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> Real-time annotation tool study</p>
+    <p><strong>Methods:</strong> Active learning + U-Net predictions</p>
+    <p><strong>Applications:</strong> Efficient data labeling</p>
+    <p><strong>Challenges:</strong> User acceptance, edge errors</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.media.2024.103619" target="_blank">
+    32. Real-Time Mobile Breast Cancer Diagnosis</a></h3>
+  <p><strong>Modality:</strong> Ultrasound (Mobile devices)</p>
+  <p><strong>Summary:</strong> Lightweight CNN models optimized for Android/iOS deployment with real-time inference.</p>
+  <p><strong>Results:</strong> Latency: 110ms, Accuracy: 94.6%</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> BUSI + device-specific tuning</p>
+    <p><strong>Methods:</strong> CNN pruning + quantization</p>
+    <p><strong>Applications:</strong> On-device cancer screening</p>
+    <p><strong>Challenges:</strong> Battery drain, device variability</p>
+  </details>
+</article>
+
+<article>
+  <h3><a href="https://doi.org/10.1016/j.inffus.2024.102397" target="_blank">
+    33. Ensemble of Pre-trained CNNs for Breast Cancer</a></h3>
+  <p><strong>Modality:</strong> Mammography</p>
+  <p><strong>Summary:</strong> Combines ResNet, EfficientNet, and DenseNet models to boost classification reliability.</p>
+  <p><strong>Results:</strong> Accuracy: 98.7%, AUC: 0.993</p>
+  <details>
+    <summary><strong>Click for Full Details</strong></summary>
+    <p><strong>Dataset:</strong> CBIS-DDSM</p>
+    <p><strong>Methods:</strong> Weighted soft-voting ensemble</p>
+    <p><strong>Applications:</strong> Boosting classification robustness</p>
+    <p><strong>Challenges:</strong> Training time, ensemble calibration</p>
+  </details>
+</article>
+
 
     <h2>🧠 MRI-Based or Multi‑Modal Models</h2>
     <!-- 4 -->
