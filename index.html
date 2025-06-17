@@ -44,6 +44,44 @@
   <h2>🚀 Explore the Latest AI Research</h2>
   <p>Check out our <a href="papers.html">Paper Vault</a> with 33+ summarized papers in deep learning and diagnostics.</p>
 </section>
+<form action="https://formspree.io/f/xgvyzezn" method="POST">
+  <label for="name">Your Name:</label>
+  <input type="text" name="name" required>
+
+  <label for="email">Your Email:</label>
+  <input type="email" name="email" required>
+
+  <label for="message">Your Message:</label>
+  <textarea name="message" rows="5" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+<form action="https://formspree.io/f/xgvyzezn" method="POST" id="contact-form">
+  <!-- your form inputs -->
+  <div id="thank-you" style="display:none;">Thanks for contacting us!</div>
+</form>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const thankYou = document.getElementById('thank-you');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.style.display = 'none';
+        thankYou.style.display = 'block';
+      }
+    });
+  });
+</script>
 
   </main>
   <footer>&copy; 2025 DecodeDx</footer>
