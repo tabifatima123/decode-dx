@@ -48,6 +48,19 @@
   </main>
 
   <footer>
+    <footer style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: gray;">
+  Last updated on <span id="updateDate"></span>
+</footer>
+
+<script>
+  const updateElement = document.getElementById("updateDate");
+  const today = new Date();
+  updateElement.textContent = today.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+</script>
     &copy; 2025 DecodeDx — Built by Tabi Fatima
   </footer>
 </body>
